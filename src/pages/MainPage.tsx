@@ -1,11 +1,16 @@
 /** @jsxImportSource @emotion/react */
+import StoryComponent from "../components/MainPageComponents/StoryCoponent/StoryComponent";
 import * as s from "./style";
-import SideBarComponent from "../components/SideBarComponent/SideBarComponent";
 
 const MainPage = () => {
     return (
         <div css={s.layout}>
-            <SideBarComponent />
+            <div css={s.contentLayout}>
+                <div>
+                    <StoryComponent />
+                </div>
+            </div>
+            <div css={s.recommendLayout}></div>
         </div>
     );
 };

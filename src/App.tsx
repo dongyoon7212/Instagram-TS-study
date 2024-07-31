@@ -1,10 +1,12 @@
 import "./App.css";
-import MainPage from "./pages/MainPage";
+import SideBarComponent from "./components/SideBarComponent/SideBarComponent";
+import MenuRoute from "./routes/MenuRoute";
 
 function App() {
     return (
-        <div>
-            <MainPage />
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <SideBarComponent />
+            <MenuRoute />
         </div>
     );
 }
